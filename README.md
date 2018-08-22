@@ -5,6 +5,8 @@
 ```bash
 ./bind.sh
 
+go install github.com/go-python/gopy
+
 go build main.go
 
 time python main.py
