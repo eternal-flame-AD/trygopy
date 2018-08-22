@@ -3,9 +3,9 @@
 [gopy](https://github.com/go-python/gopy)测试
 
 ```bash
-./bind.sh
-
 go install github.com/go-python/gopy
+
+./bind.sh
 
 go build main.go
 
