@@ -1,29 +1,13 @@
 package trygopy
 
-import (
-	"math"
-)
-
 func Echo(s string) string {
 	return s
 }
 
-func isPrime(p int) bool {
-	for i := 2; i <= int(math.Sqrt(float64(p))); i++ {
-		if p%i == 0 {
-			return false
-		}
-	}
-	return true
+func BatchEcho(s []string) []string {
+	return s
 }
 
-func HeavyCalc(k int) int {
-	s := 1
-	for i := 0; i < k; i++ {
-		s++
-		for !isPrime(s) {
-			s++
-		}
-	}
-	return s
+func GoPyStringSliceHelper(s []string, i int) string {
+	return s[i]
 }
